@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktives Dashboard – HoMe</title>
+  <link rel="stylesheet" href="styles.css">
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apextree"></script>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+
+    <nav class="nav container">
+      <img class="logo" src="images/logo.jpg" alt="Hochschule Merseburg">
+      <div class="nav-links">
+        <a href="#overview">ÜBERSICHT</a>
+        <a href="#personal">PERSONAL</a>
+        <a href="#organization">ORGANISATION</a>
+        <a href="#analysis">ANALYSEN</a>
+        <a href="#information">INFORMATIONEN</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <h1>Interaktives Dashboard des<br>
+        Fachbereichs Ingenieur- und<br>
+        Naturwissenschaften</h1>
+
+      <div class="hero-bottom">
+        <div class="department">Fachbereich Ingenieur-<br>und Naturwissenschaften</div>
+        <div class="year">2026</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section id="overview" class="intro section-blue">
+    <div class="container intro-grid">
+      <div class="intro-visual">
+        <img src="images/p1_4.png" alt="Dashboard Illustration">
+        <div class="data-box">
+          <p>Datenstand: 31. Dezember 2026</p>
+          <p>Datenquelle: interne Personaldaten des<br>
+          Fachbereichs Ingenieur- und Naturwissenschaften</p>
+        </div>
+      </div>
+
+      <div class="intro-text">
+        <h2>Einleitung</h2>
+        <p>
+          Diese interaktive Webseite bietet einen Überblick über die
+          organisatorische und personelle Struktur des Fachbereichs
+          Ingenieur- und Naturwissenschaften.
+        </p>
+        <p>
+          Die dargestellten Daten beziehen sich ausschließlich auf diesen
+          Fachbereich. Über verschiedene Filter und Diagramme können
+          Personalgruppen, Organisationseinheiten und strukturelle Merkmale
+          untersucht werden.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL / CHART -->
+  <section id="personal" class="section white personal">
+      <h2 class="blue-title">Mitarbeitende pro<br>Institut</h2>
+
+      <div class="chart-card">
+        <div id="radialBar"> </div>
+      </div>
+  </section>
+
+
+  <section class="kpis">
+      <div class="container">
+
+          <h2 class="kpis-title">Kennzahlen</h2>
+
+          <div class="kpi-grid">
+
+              <!-- Institute -->
+              <div class="kpi-card">
+                  <div class="kpi-visual radial-small">
+                      <span>6 %</span>
+                  </div>
+
+                  <h3>Institute</h3>
+
+                  <p>
+                      Organisationseinheiten<br>
+                      des Fachbereichs
+                  </p>
+              </div>
+
+
+              <!-- Professuren -->
+              <div class="kpi-card">
+                  <div class="kpi-visual progress-small">
+                      <div class="progress-line">
+                          <span></span>
+                      </div>
+
+                      <strong>24 %</strong>
+                  </div>
+
+                  <h3>Professuren</h3>
+
+                  <p>
+                      Professuren im<br>
+                      Fachbereich
+                  </p>
+              </div>
+
+
+              <!-- Beschäftigte -->
+              <div class="kpi-card employees-card">
+
+                  <div class="people">
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                  </div>
+
+                  <div class="people">
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                      <span>●</span>
+                  </div>
+
+                  <h3>Gesamtbeschäftigte</h3>
+
+                  <p>
+                      Beschäftigte im<br>
+                      Fachbereich
+                  </p>
+              </div>
+
+          </div>
+
+
+          <!-- TOTAL -->
+          <div class="kpi-total">
+
+              <div class="total-label">
+                  Gesamtbeschäftigte
+              </div>
+
+              <div class="total-number">
+                  126
+              </div>
+
+              <div class="total-growth">
+                  +67 %
+              </div>
+
+          </div>
+
+      </div>
+  </section>
+  <!-- KPI -->
+  <section class="kpis section-blue">
+    <div class="container">
+      <h2>Kennzahlen</h2>
+
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="semi-circle"><span>6 %</span></div>
+          <h3>Institute</h3>
+          <p>Gib kurz an, was du<br>besprechen möchtest.</p>
+        </div>
+
+        <div class="kpi">
+          <div class="line-stat">
+            <span></span><strong>24 %</strong>
+          </div>
+          <h3>Professuren</h3>
+          <p>Gib kurz an, was du<br>besprechen möchtest.</p>
+        </div>
+
+        <div class="kpi">
+          <div class="people-stat">
+            <span>👤 👤 👤 👤 👤 👤</span>
+            <span>👤 👤 👤 <b>👤 👤 👤</b></span>
+          </div>
+          <h3>Gesamtbeschäftigte</h3>
+          <p>Gib kurz an, was du<br>besprechen möchtest.</p>
+        </div>
+      </div>
+
+      <div class="total-box">
+        <strong>Gesamtbeschäftigte</strong>
+        <b>126</b>
+        <span>+67 %</span>
+      </div>
+
+      <div class="chart-card lower-chart">
+          <div id="multipleBand"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANIZATION -->
+  <section id="organization" class="section white organization">
+    <div class="container">
+      <h2 class="blue-title">Organigram</h2>
+
+      <div class="org-image">
+          <div id="tree"></div>
+          </div>
+    </div>
+  </section>
+
+  <!-- BAR CHART -->
+  <section id="analysis" class="section beige">
+    <div class="container">
+      <h2 class="blue-title">Anzahl der Organisationseinheiten</h2>
+
+      <div class="chart-card bar-chart">
+        <div id="bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGIONS -->
+  <section class="regions">
+    <div class="region-overlay"></div>
+    <div class="container">
+      <h2>Verteilung der<br>Organisationseinheiten</h2>
+
+      <div class="region-grid">
+        <div class="region">Nordamerika<strong>+10 %</strong></div>
+        <div class="region">Südamerika<strong>+15 %</strong></div>
+        <div class="region">Europa<strong>+10 %</strong></div>
+        <div class="region">Afrika<strong>+9 %</strong></div>
+        <div class="region">Asien<strong>+12 %</strong></div>
+        <div class="region">Australien<strong>+8 %</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="information" class="highlights s ection white">
+    <div class="container">
+      <h2 class="blue-title left">Highlights<br>2030</h2>
+
+      <div class="highlight-grid">
+        <img src="images/p4_2.jpg" alt="Hochschule Merseburg">
+        <div>
+          <h3>Unseren Horizont<br>erweitern</h3>
+          <p>
+            Du kannst in kurzen, aber aussagekräftigen Absätzen ausführlicher
+            über jedes Highlight sprechen. Dies ist eine gute Möglichkeit,
+            markante Punkte zu entdecken und sie mit Key Visuals zu begleiten.
+          </p>
+          <p>
+            Einige Aufforderungen, die helfen können: Was sind die
+            Hauptleistungen? Was war nötig, um die Ziele zu erreichen?
+            Welche Auswirkungen haben die Ergebnisse auf das Unternehmen,
+            die beteiligten Menschen und die Branche als Ganzes?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section-blue">
+    <div class="container">
+      <h2>Nam­hafte Projekte</h2>
+
+      <div class="project-chart">
+          <div id="columnBar"> </div>
+      </div>
+
+      <div class="project-copy">
+        <p>Digital und Medien</p>
+        <h3>Das Projekt in der dritten Reihe</h3>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
