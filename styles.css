@@ -31,11 +31,6 @@ body {
   padding: 80px 0;
 }
 
-.section-blue {
-  background: linear-gradient(180deg, #2d91bd 0%, #0b3c61 100%);
-  color: white;
-}
-
 .white {
   background: #fff;
 }
@@ -214,10 +209,6 @@ h2 {
     font-weight: 900;
 }
 
-/* ========================================
-   KENNZAHLEN
-======================================== */
-
 .kpis {
     padding: 90px 0 110px;
 
@@ -232,8 +223,6 @@ h2 {
 }
 
 
-/* TITLE */
-
 .kpis-title {
     text-align: center;
 
@@ -245,10 +234,6 @@ h2 {
     letter-spacing: -1px;
 }
 
-
-/* ========================================
-   CARDS
-======================================== */
 
 .kpi-grid {
     display: grid;
@@ -295,11 +280,6 @@ h2 {
     transform: translateY(-4px);
 }
 
-
-/* ========================================
-   FIRST VISUAL — 6%
-======================================== */
-
 .kpi-visual {
     height: 120px;
 
@@ -325,7 +305,7 @@ h2 {
     overflow: hidden;
 }
 
-/* highlighted 6% */
+
 .radial-small::after {
     content: "";
 
@@ -358,11 +338,6 @@ h2 {
 
     font-weight: 300;
 }
-
-
-/* ========================================
-   SECOND VISUAL — 24%
-======================================== */
 
 .progress-small {
     width: 200px;
@@ -411,11 +386,6 @@ h2 {
     white-space: nowrap;
 }
 
-
-/* ========================================
-   PEOPLE
-======================================== */
-
 .employees-card {
     justify-content: flex-start;
 }
@@ -451,9 +421,6 @@ h2 {
     font-size: 0;
 }
 
-
-/* body under each person */
-
 .people span::after {
     content: "";
 
@@ -477,10 +444,6 @@ h2 {
 }
 
 
-/* ========================================
-   TEXT
-======================================== */
-
 .kpi-card h3 {
     font-size: 25px;
 
@@ -501,11 +464,6 @@ h2 {
 
     margin: 0;
 }
-
-
-/* ========================================
-   TOTAL BAR
-======================================== */
 
 .kpi-total {
     max-width: 1050px;
@@ -563,11 +521,6 @@ h2 {
     font-size: 18px;
 }
 
-
-/* ========================================
-   RESPONSIVE
-======================================== */
-
 @media (max-width: 850px) {
 
     .kpi-grid {
@@ -609,7 +562,7 @@ h2 {
     }
 }
 
-/* KPI */
+
 .kpis {
   padding-bottom: 80px;
 }
@@ -728,7 +681,6 @@ h2 {
   font-size: 18px;
 }
 
-/* ORGANIZATION */
 .organization {
   padding-bottom: 70px;
 }
@@ -740,12 +692,10 @@ h2 {
   margin: auto;
 }
 
-/* BAR CHART */
 .bar-chart {
   width: min(900px, 100%);
 }
 
-/* REGIONS */
 .regions {
   min-height: 720px;
   background:
@@ -787,7 +737,6 @@ h2 {
   margin-top: 10px;
 }
 
-/* HIGHLIGHTS */
 .highlights {
   padding-bottom: 75px;
 }
@@ -819,7 +768,6 @@ h2 {
   margin-bottom: 22px;
 }
 
-/* PROJECTS */
 .projects {
   padding-bottom: 80px;
 }
