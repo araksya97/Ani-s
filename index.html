@@ -1,254 +1,283 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HoMe</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoMe</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/apextree"></script>
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
+<header class="hero" id="overview">
+    <div class="hero-inner">
+        <nav class="top-nav">
+            <div class="nav-links">
+                <a href="#overview">ÜBERSICHT</a>
+                <a href="#personal">PERSONAL</a>
+                <a href="#organisation">ORGANISATION</a>
+                <a href="#analysen">ANALYSEN</a>
+                <a href="#information">INFORMATIONEN</a>
+            </div>
+            <img class="logo" src="images/logo.png"
+                 alt="Hochschule Merseburg – Fachbereich Ingenieur- und Naturwissenschaften">
+        </nav>
 
-    <nav class="nav container">
-      <img class="logo" src="images/logo.jpg" alt="Hochschule Merseburg">
-      <div class="nav-links">
-        <a href="#overview">ÜBERSICHT</a>
-        <a href="#personal">PERSONAL</a>
-        <a href="#organization">ORGANISATION</a>
-        <a href="#analysis">ANALYSEN</a>
-        <a href="#information">INFORMATIONEN</a>
-      </div>
-    </nav>
 
-    <div class="hero-content container">
-      <h1>Interaktives Dashboard des<br>
-        Fachbereichs Ingenieur- und<br>
-        Naturwissenschaften</h1>
-
-      <div class="hero-bottom">
-        <div class="department">Fachbereich Ingenieur-<br>und Naturwissenschaften</div>
-        <div class="year">2026</div>
-      </div>
-    </div>
-  </header>
-
-  <!-- INTRO -->
-  <section id="overview" class="intro section-blue">
-    <div class="container intro-grid">
-      <div class="intro-visual">
-        <img src="images/p1_4.png" alt="Dashboard Illustration">
-        <div class="data-box">
-          <p>Datenstand: 31. Dezember 2026</p>
-          <p>Datenquelle: interne Personaldaten des<br>
-          Fachbereichs Ingenieur- und Naturwissenschaften</p>
+        <h1>Interaktives Dashboard des<br>Fachbereichs Ingenieur- und<br>Naturwissenschaften</h1>
+        <div class="hero-subtitle">
+            <strong>Organisation · Personal · Studium</strong>
+            <span>Strukturen und Kennzahlen auf einen Blick</span>
         </div>
-      </div>
 
-      <div class="intro-text">
-        <h2>Einleitung</h2>
-        <p>
-          Diese interaktive Webseite bietet einen Überblick über die
-          organisatorische und personelle Struktur des Fachbereichs
-          Ingenieur- und Naturwissenschaften.
-        </p>
-        <p>
-          Die dargestellten Daten beziehen sich ausschließlich auf diesen
-          Fachbereich. Über verschiedene Filter und Diagramme können
-          Personalgruppen, Organisationseinheiten und strukturelle Merkmale
-          untersucht werden.
-        </p>
-      </div>
     </div>
-  </section>
+</header>
 
-  <!-- PERSONAL / CHART -->
-  <section id="personal" class="section white personal">
-      <h2 class="blue-title">Mitarbeitende pro<br>Institut</h2>
-
-      <div class="chart-card">
-        <div id="radialBar"> </div>
-      </div>
-  </section>
-
-
-  <section class="kpis">
-      <div class="container">
-
-          <h2 class="kpis-title">Kennzahlen</h2>
-
-          <div class="kpi-grid">
-
-              <!-- Institute -->
-              <div class="kpi-card">
-                  <div class="kpi-visual radial-small">
-                      <span>6 %</span>
-                  </div>
-
-                  <h3>Institute</h3>
-
-                  <p>
-                      Organisationseinheiten<br>
-                      des Fachbereichs
-                  </p>
-              </div>
-
-
-              <!-- Professuren -->
-              <div class="kpi-card">
-                  <div class="kpi-visual progress-small">
-                      <div class="progress-line">
-                          <span></span>
-                      </div>
-
-                      <strong>24 %</strong>
-                  </div>
-
-                  <h3>Professuren</h3>
-
-                  <p>
-                      Professuren im<br>
-                      Fachbereich
-                  </p>
-              </div>
-
-
-              <!-- Beschäftigte -->
-              <div class="kpi-card employees-card">
-
-                  <div class="people">
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                  </div>
-
-                  <div class="people">
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                      <span>●</span>
-                  </div>
-
-                  <h3>Gesamtbeschäftigte</h3>
-
-                  <p>
-                      Beschäftigte im<br>
-                      Fachbereich
-                  </p>
-              </div>
-
-          </div>
-
-
-          <!-- TOTAL -->
-          <div class="kpi-total">
-
-              <div class="total-label">
-                  Gesamtbeschäftigte
-              </div>
-
-              <div class="total-number">
-                  126
-              </div>
-
-              <div class="total-growth">
-                  +67 %
-              </div>
-
-          </div>
-
-      </div>
-  </section>
-
-  <!-- ORGANIZATION -->
-  <section id="organization" class="section white organization">
-    <div class="container">
-      <h2 class="blue-title">Organigram</h2>
-
-      <div class="org-image">
-          <div id="tree"></div>
-          </div>
-    </div>
-  </section>
-
-  <!-- BAR CHART -->
-  <section id="analysis" class="section beige">
-    <div class="container">
-      <h2 class="blue-title">Anzahl der Organisationseinheiten</h2>
-
-      <div class="chart-card bar-chart">
-        <div id="bar"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REGIONS -->
-  <section class="regions">
-    <div class="region-overlay"></div>
-    <div class="container">
-      <h2>Verteilung der<br>Organisationseinheiten</h2>
-
-      <div class="region-grid">
-        <div class="region">Nordamerika<strong>+10 %</strong></div>
-        <div class="region">Südamerika<strong>+15 %</strong></div>
-        <div class="region">Europa<strong>+10 %</strong></div>
-        <div class="region">Afrika<strong>+9 %</strong></div>
-        <div class="region">Asien<strong>+12 %</strong></div>
-        <div class="region">Australien<strong>+8 %</strong></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HIGHLIGHTS -->
-  <section id="information" class="highlights s ection white">
-    <div class="container">
-      <h2 class="blue-title left">Highlights<br>2030</h2>
-
-      <div class="highlight-grid">
-        <img src="images/p4_2.jpg" alt="Hochschule Merseburg">
-        <div>
-          <h3>Unseren Horizont<br>erweitern</h3>
-          <p>
-            Du kannst in kurzen, aber aussagekräftigen Absätzen ausführlicher
-            über jedes Highlight sprechen. Dies ist eine gute Möglichkeit,
-            markante Punkte zu entdecken und sie mit Key Visuals zu begleiten.
-          </p>
-          <p>
-            Einige Aufforderungen, die helfen können: Was sind die
-            Hauptleistungen? Was war nötig, um die Ziele zu erreichen?
-            Welche Auswirkungen haben die Ergebnisse auf das Unternehmen,
-            die beteiligten Menschen und die Branche als Ganzes?
-          </p>
+<section class="about">
+    <div class="about-top">
+        <div class="about-image">
+            <img src="images/page1_img3.png" alt="Illustration eines Hochschulgebäudes">
         </div>
-      </div>
+        <div class="about-text">
+            <h2>Über das Dashboard</h2>
+            <p>Das interaktive Dashboard bietet einen strukturierten Überblick über den Fachbereich Ingenieur- und
+                Naturwissenschaften der Hochschule Merseburg. Es verbindet Informationen zur Organisationsstruktur mit
+                ausgewählten Personal- und Strukturdaten.</p>
+            <p>Interaktive Visualisierungen ermöglichen die Betrachtung von Personalgruppen, Organisationseinheiten,
+                Professuren, Zuständigkeiten und weiteren Bereichen des Fachbereichs. Ergänzend werden Studienangebote,
+                Gremien und zentrale Funktionen übersichtlich dargestellt.</p>
+            <p>Ziel ist es, komplexe organisatorische Informationen verständlich, transparent und zentral zugänglich zu
+                machen.</p>
+        </div>
     </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects section-blue">
-    <div class="container">
-      <h2>Nam­hafte Projekte</h2>
-
-      <div class="project-chart">
-          <div id="columnBar"> </div>
-      </div>
-
-      <div class="project-copy">
-        <p>Digital und Medien</p>
-        <h3>Das Projekt in der dritten Reihe</h3>
-      </div>
+    <div class="source-row">
+        <div class="source-box">
+            <div class="source-icon"><img src="images/calendar.png" alt=""></div>
+            <p><b>Strukturinformationen:</b><br><strong>Stand: 2026</strong></p>
+        </div>
+        <div class="source-box">
+            <div class="source-icon people"><img src="images/ppl_blue.png" alt=""></div>
+            <p><b>Personalstatistik:</b><br><strong>Stand: 2026</strong></p>
+        </div>
+        <div class="source-box">
+            <span class="source-icon book"><img src="images/book.png" alt=""></span>
+            <p><b>QUELLEN:</b><br><strong>Interne Fachbereichs-<br>daten Hochschule<br>Merseburg</strong></p>
+        </div>
     </div>
-  </section>
+</section>
 
+<main class="personal-page" id="personal">
+    <section class="chart-block first-chart" id="organisation">
+        <h2>Mitarbeitende nach Organisationseinheit</h2>
+        <div class="horizontal-chart">
+            <div id="basic-chart"></div>
+            <div class="axis-title">Anzahl Mitarbeitende (Kopfzahl)</div>
+        </div>
+    </section>
+
+    <section class="kpi-section">
+        <h2>Personalkennzahlen</h2>
+        <div class="kpi-row">
+            <article class="kpi-card red">
+                <div class="kpi-symbol">
+                    <div class="icon-1"><img src="images/ppl_red.png" alt=""></div>
+                </div>
+                <strong>153</strong>
+                <p>Mitarbeitende<br>insgesamt</p>
+            </article>
+            <article class="kpi-card green">
+                <div class="kpi-symbol">
+                    <div class="icon-2"><img src="images/hat_green.png" alt=""></div>
+                </div>
+                <strong>34</strong>
+                <p>Professorinnen und<br>Professoren</p>
+            </article>
+            <article class="kpi-card blue">
+                <div class="kpi-symbol">
+                    <div class="icon-3"><img src="images/lupe.png" alt=""></div>
+                </div>
+                <strong>49</strong>
+                <p>Wissenschaftliche<br>Mitarbeitende</p>
+            </article>
+            <article class="kpi-card purple">
+                <div class="kpi-symbol">
+                    <div class="icon-4"><img src="images/frau_lila.png" alt=""></div>
+                </div>
+                <strong>45</strong>
+                <p>Frauenanteil<br>insgesamt</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="chart-block employment-chart">
+        <h2>Mitarbeitende nach Beschäftigungsart</h2>
+        <div class="horizontal-chart">
+            <div id="basic-2nd-chart"></div>
+            <div class="axis-title">Anzahl Mitarbeitende (Kopfzahl)</div>
+        </div>
+    </section>
+</main>
+
+<section class="structure-section" id="analysen">
+    <h2>Personalstruktur des Fachbereiches</h2>
+    <div class="structure-content">
+        <div class="staff-donut-wrap">
+            <div class="staff-donut">
+                <div class="donut-hole"><span>total</span><strong>153</strong><span>Mitarbeitende<br>Insgesamt</span>
+                </div>
+            </div>
+            <span class="donut-label label-prof">Professor:innen<br>13,6%</span>
+            <span class="donut-label label-science">Wissenschaftliche<br>Mitarbeitende<br>24,5%</span>
+            <span class="donut-label label-teaching">Lehrkräfte für<br>besondere<br>Aufgaben<br>21,8%</span>
+            <span class="donut-label label-support">Wissenschaft-<br>unterstützendes<br>Personal<br>40,1%</span>
+        </div>
+        <div class="staff-table-wrap">
+            <table class="staff-table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>männlich</th>
+                    <th>weiblich</th>
+                    <th>Frauenanteil</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Professor:innen</td>
+                    <td>29</td>
+                    <td>5</td>
+                    <td>14,71%</td>
+                </tr>
+                <tr>
+                    <td>Wissenschaftliche<br>Mitarbeitende</td>
+                    <td>36</td>
+                    <td>13</td>
+                    <td>26,53%</td>
+                </tr>
+                <tr>
+                    <td>Lehrkräfte für<br>besondere<br>Aufgaben (LfbA)</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>23,53%</td>
+                </tr>
+                <tr>
+                    <td>Wissenschaft-<br>unterstützendes<br>Personal</td>
+                    <td>30</td>
+                    <td>23</td>
+                    <td>43,40%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="gender-section">
+    <h2>Geschlechterverteilung der Mitarbeitenden</h2>
+    <div class="gender-content">
+        <div class="gender-donut-wrap">
+            <div class="gender-donut">
+                <div class="gender-hole"><span>total</span><strong>153</strong><span>Mitarbeitende<br>Insgesamt</span>
+                </div>
+            </div>
+            <span class="gender-label women-label">Frauen<br>29,4%</span>
+            <span class="gender-label men-label">Männer<br>70,6%</span>
+        </div>
+        <div class="gender-cards">
+            <div class="gender-card women">
+                <div class="person-outline"><img src="images/Frau.png" alt=""></div>
+                <div><b>Frauen<br>45</b><strong>29,41%</strong></div>
+            </div>
+            <div class="gender-card men">
+                <div class="person-outline"><img src="images/Man.png" alt=""></div>
+                <div><b>Männer<br>108</b><strong>70,59%</strong></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="expertise-section" id="information">
+    <div class="expertise-inner">
+        <h2>Fachliche Vielfalt des INW</h2>
+        <p class="expertise-intro">Innovative Lehre, anwendungsorientierte Forschung und interdisziplinäre
+            Zusammenarbeit –<br>unsere sechs fachlichen Schwerpunkte gestalten die Lösungen von morgen.</p>
+        <div class="expertise-grid">
+            <article class="expertise-card green">
+                <div class="expertise-heading">
+                    <div class="icon"><img src="images/green.png" alt=""></div>
+                    <h3>Werk- &amp; Rohstoffe</h3></div>
+                <p>Nachhaltige Materialnutzung, innovative Werkstoffe und ressourcenschonende Prozesse.</p></article>
+            <article class="expertise-card orange">
+                <div class="expertise-heading">
+                    <div class="icon"><img src="images/energy.png" alt=""></div>
+                    <h3>Energie</h3></div>
+                <p>Nachhaltige Materialnutzung, innovative Werkstoffe und ressourcenschonende Prozesse.</p></article>
+            <article class="expertise-card cyan">
+                <div class="expertise-heading">
+                    <div class="icon"><img src="images/tech.png" alt=""></div>
+                    <h3>High-Tech-<br>Produktentwicklung</h3></div>
+                <p>Nachhaltige Materialnutzung, innovative Werkstoffe und ressourcenschonende Prozesse.</p></article>
+            <article class="expertise-card purple">
+                <div class="expertise-heading">
+                    <div class="icon"><img src="images/comp.png" alt=""></div>
+                    <h3>Digitalisierung &amp;<br>Automatisierung</h3></div>
+                <p>Intelligente Systeme, vernetzte Prozesse und die digitale Transformation der Industrie.</p></article>
+            <article class="expertise-card red">
+                <div class="expertise-heading">
+                    <div class="icon"><img src="images/comm.png" alt=""></div>
+                    <h3>Industriekommu<br>nikation</h3></div>
+                <p>Technik verständlich machen – für den erfolgreichen Austausch zwischen Wissenschaft, Wirtschaft und
+                    Gesellschaft.</p></article>
+            <article class="expertise-card blue">
+                <div class="expertise-heading">
+                    <div class="icon"><img src="images/light-book.png" alt=""></div>
+                    <h3>Wissensmanagement</h3></div>
+                <p>Wissen vernetzen, Potenziale nutzen und Innovationen gemeinsam vorantreiben.</p></article>
+        </div>
+        <p class="closing">Praxisnah. Interdisziplinär. Zukunftsorientiert.</p>
+    </div>
+</section>
+
+<section class="study-section">
+    <div class="study-image"><img src="images/study-building.jpg" alt="Gebäude der Hochschule Merseburg"></div>
+    <div class="study-copy">
+        <h2>Studium &amp; Perspektiven</h2>
+        <p>Der Fachbereich verbindet ingenieur- und naturwissenschaftliche Ausbildung mit aktuellen Fragestellungen aus
+            Nachhaltigkeit, Digitalisierung, Automatisierung, Energie und High-Tech-Produktentwicklung.</p>
+        <p>Praxisnahe Studienangebote verbinden wissenschaftliche Grundlagen mit aktuellen technischen und
+            gesellschaftlichen Herausforderungen.</p>
+        <div class="study-benefits">
+            <div>
+                <div class="benefit-icon graduation"><img src="images/hat.png" alt=""/></div>
+                <p>Vielfältige<br>Studienangebote</p></div>
+            <div>
+                <div class="benefit-icon gear"><img src="images/setting.png" alt=""/></div>
+                <p>Praxisnahe<br>Ausbildung</p></div>
+            <div>
+                <div class="benefit-icon bulb"><img src="images/light.png" alt=""/></div>
+                <p>Zukunftsorientierte<br>Themen</p></div>
+            <div>
+                <div class="benefit-icon group"><img src="images/people.png" alt=""/></div>
+                <p>Starke<br>Perspektiven</p></div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-photo"></div>
+    <div class="footer-main">
+        <div class="footer-title"><h3>Interaktives Dashboard INW</h3>
+            <p>Fachbereich Ingenieur- und Naturwissenschaften<br>Hochschule Merseburg</p></div>
+        <div class="footer-data">
+            <div class="footer-info"><img class="data" src="images/data.png" alt=""/> <h4>Datenbasis</h4></div>
+            <p>Personalstatistik: Stand 2026<br>Strukturinformationen: Stand 2026</p></div>
+        <div class="footer-project">
+            <div class="footer-info"><img class="hat" src="images/hut.png" alt=""/> <h4> Über das Projekt</h4></div>
+            <p>Dashboard im Rahmen<br>einer Masterarbeit</p><img class="logo" src="images/logo.png" alt=""></div>
+    </div>
+    <div class="footer-bottom">2026 Hochschule Merseburg. Fachbereich Ingenieur- und Naturwissenschaften</div>
+</footer>
 </body>
 </html>
